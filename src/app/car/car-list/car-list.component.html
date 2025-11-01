@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <h1>TuSegundazo.com</h1>
+  <img src="/Frame 1.png" alt="Imagen de un carro">
+  <hr>
+  <div class="col-6">
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Marca</th>
+          <th class="h4">Linea</th>
+          <th class="h4">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let car of cars">
+          <td>
+            <dd class="carId">{{car.id}}</dd>
+          </td>
+          <td>
+            <dd>{{car.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{car.linea}}</dd>
+          </td>
+          <td>
+            <dd>{{car.modelo}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+    <p *ngFor="let model of counterArray">
+      Total {{model.key}}: {{model.value}}
+    </p>
+  </div>
+</div>
